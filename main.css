@@ -1,0 +1,42 @@
+/*font-family: 'Eczar', serif;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Work Sans', sans-serif;
+
+*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  moz-font-feature-settings: "kern";
+  font-kerning: normal;
+}
+
+h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
