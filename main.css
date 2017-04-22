@@ -16,6 +16,8 @@ body {
   -webkit-font-feature-settings: "kern";
   moz-font-feature-settings: "kern";
   font-kerning: normal;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #faddd9;
 }
 
 h1 {
@@ -24,19 +26,130 @@ h1 {
   letter-spacing: 1px;
   font-size: 42px;
   font-weight: bold;
+  margin: 0 auto;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 10px auto;
 }
 
 nav ul li {
   list-style-type: none;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: black;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.issue-one {
+  display: flex;
+  flex-direction: row;
+}
+
+.download {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .download {
+    width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+.download li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.download li:first-child {
+  font-family: 'Eczar', serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.download li a {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.download li a:hover:after {
+  .download li a:after {
+    padding-left: 10px;
+  }
+}
+
+.download li a:after {
+  content: '→';
+  position: absolute;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+@media (max-width: 800px) {
+  .issue-one {
+    flex-direction: column;
+  }
+}
+
+img {
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.footer {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.footer p {
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
 }
