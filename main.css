@@ -72,7 +72,7 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -87,6 +87,7 @@ a:hover {
 .download li {
   list-style-type: none;
   text-align: left;
+  align-self: center;
 }
 
 .download li:first-child {
@@ -101,12 +102,11 @@ a:hover {
   text-decoration: none;
   color: black;
   position: relative;
+  transition: 0.3s ease;
 }
 
 .download li a:hover:after {
-  .download li a:after {
-    padding-left: 10px;
-  }
+  right: -25px;
 }
 
 .download li a:after {
@@ -114,7 +114,8 @@ a:hover {
   position: absolute;
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
-  padding-left: 5px;
+  right: -15px;
+  transition: 0.3s ease;
 }
 
 @media (max-width: 800px) {
